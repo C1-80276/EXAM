@@ -24,7 +24,7 @@ pipeline {
         }
         stage ('docker create service') {
             steps {
-                sh 'docker service create --name exam3 --replicas 5 -p 9876:80 chiraag77/resume_web:1'
+                sh 'docker service create --name -d exam3 --replicas 5 -p 9876:80 chiraag77/resume_web:1'
             }
         }
     }
